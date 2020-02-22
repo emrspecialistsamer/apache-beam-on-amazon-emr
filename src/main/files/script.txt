@@ -1,0 +1,15 @@
+mvn clean install
+
+LOCAL - DIRECT RUNNER
+java -jar target/awsbeam-app-1.0-SNAPSHOT.jar --catalogLocation="src/main/resources/" --inputFile="/myfolder/src/main/resources/Customers.csv" --output="/tmp/out" --catalogTable="ApacheBeamTable" --catalogTableProperty="dept"
+
+LOCAL - DIRECT RUNNER - S3
+java -jar target/awsbeam-app-1.0-SNAPSHOT.jar --catalogLocation="bucket-name" --inputFile="s3://mybucket/input/Customers.csv" --output="s3://mybucket/output/out" --catalogTable="ApacheBeamTable" --catalogTableProperty="dept" --awsRegion="us-east-1"
+
+SPARK RUNNER ON EMR
+
+aws emr add-steps --cluster-id xxxxx --steps Type=CUSTOM_JAR,Name="Beam-POC",Jar="command-runner.jar",ActionOnFailure=CONTINUE,Args=[spark-submit,--deploy-mode,cluster,--class,com.amazonaws.apachebeam.StarterPipeline,s3://my-bucket/jar/awsbeam-app-1.0-SNAPSHOT.jar,--runner=SparkRunner,--catalogLocation=my-bucket,--inputFile=s3://my-bucket/apache-beam/poc/input/Customers.csv,--output=s3://my-bucket/apache-beam/poc/output/,--catalogTable=ApacheBeamTable,--catalogTableProperty=dept,--awsRegion=us-east-1]
+
+
+INTELLI J 
+--catalogLocation="src/main/resources/" --inputFile="s3://mybucket/input/Customers.csv" --output="s3://mybucket/output/out" --catalogTable="ApacheBeamTable" --catalogTableProperty="dept" --awsRegion="us-east-1"

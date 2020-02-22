@@ -1,0 +1,96 @@
+[
+  {
+    "dept": "Engineering",
+    "details": [
+      {
+        "fieldname": "EmpId",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "FirstName",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "LastName",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "Street",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "City",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "State",
+        "startindex": 0,
+        "endindex": 2,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "Zipcode",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 1
+      }
+    ]
+  },
+  {
+    "dept": "Finance",
+    "details": [
+      {
+        "fieldname": "EmpId",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "FirstName",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "LastName",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "Street",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "City",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "State",
+        "startindex": 0,
+        "endindex": 2,
+        "isMandatory": 0
+      },
+      {
+        "fieldname": "Zipcode",
+        "startindex": 0,
+        "endindex": 5,
+        "isMandatory": 1
+      }
+    ]
+  }
+]
